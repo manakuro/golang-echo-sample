@@ -15,7 +15,7 @@ func main() {
 	e.Use(middleware.Recover())
 
 	e.GET("/hello", handler.Hello())
+	e.GET("/users", handler.Users())
 
 	log.Fatalln(e.Start(":8080"))
-
 }

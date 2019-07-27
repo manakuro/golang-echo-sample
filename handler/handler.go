@@ -11,3 +11,9 @@ func Hello() echo.HandlerFunc {
 		return c.String(http.StatusOK, "Hello World 2")
 	}
 }
+
+func Users() echo.HandlerFunc {
+	return func(c echo.Context) error {
+		return c.String(http.StatusOK, "Users!")
+	}
+}
