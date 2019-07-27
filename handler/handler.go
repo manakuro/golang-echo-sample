@@ -8,12 +8,12 @@ import (
 
 func Hello() echo.HandlerFunc {
 	return func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello World 2")
+		return c.String(http.StatusOK, "Hello World")
 	}
 }
 
 func Users() echo.HandlerFunc {
 	return func(c echo.Context) error {
-		return c.String(http.StatusOK, "Users!")
+		return c.String(http.StatusOK, "Users")
 	}
 }
